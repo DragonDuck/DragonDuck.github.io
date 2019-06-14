@@ -2,6 +2,21 @@
 layout: default
 title: Home
 ---
-<h1>Hi there, I'm Hank Quinlan!</h1>
-<p>I'm best known as the horrible cop from <em>A Touch of Evil</em>
-  Don't trust me. <a href="/about">Read more about my life...</a></p>
+<h1>Projects</h1>
+<ul class="pinnedposts">
+  {% for post in site.posts %}
+    {% if post.pinned %}
+      {% assign postname = post.path | split: "/" %}
+      {% assign postname = postname[1] | split: "." %}
+      {% assign postname = postname[0] %}
+      <li>
+        <div>
+          <img src="/images/{{ postname }}/thumbnail.jpg" alt="Thumbnail" />
+          <span>
+            {{ post.date | date_to_string }} <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+          </span>
+        </div>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
