@@ -158,6 +158,9 @@ font-size: 28px;
 font-size: 28px;
         }
     }
+img {
+  max-width: 100%;
+}
 h3 {
 font-size: 22px;
 @include media-query($on-laptop) {
