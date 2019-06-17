@@ -1,22 +1,26 @@
 ---
 layout: default
-title: Home
 ---
-<h1>Projects</h1>
-<ul class="pinnedposts">
-  {% for post in site.posts %}
-    {% if post.pinned %}
-      {% assign postname = post.path | split: "/" %}
-      {% assign postname = postname[1] | split: "." %}
-      {% assign postname = postname[0] %}
+
+<div class="header-bar">
+  <h1>data dork</h1>
+  <h2>a data science portfolio</h2>
+  <br/>
+  <hr>
+  <br/>
+</div>
+
+
+<ul class="post-list">
+    {% for post in paginator.posts %}
       <li>
-        <div>
-          <img src="/images/{{ postname }}/thumbnail.jpg" alt="Thumbnail" />
-          <span>
-            {{ post.date | date_to_string }} <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-          </span>
-        </div>
+          <div class="default_thumbnail"></div>
+          <div>
+            <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+            <br/>
+            <!--<p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>//-->
+            <p>{{ post.description }}</p>
+          </div>
       </li>
-    {% endif %}
-  {% endfor %}
+    {% endfor %}
 </ul>

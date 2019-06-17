@@ -1,4 +1,29 @@
-name: Hank Quinlan, Horrible Cop
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+# Site settings
+title: data dork
+email: mail@data-dork.com
+description: A data science portfolio
+baseurl:  # the subpath of your site, e.g. /blog/
+url:  # the base hostname & protocol for your site
+twitter_username:
+github_username:  DragonDuck
+permalink: /projects/:title
 
+# Build settings
+markdown: kramdown
+
+highlighter: rouge
+
+# Pagination
+plugins:
+  - jekyll-paginate
+paginate: 15
+paginate_path: "/portfolio/page:num/"
+
+
+#collections:
+#  portfolio:
+#    output: true
+#    permalink: /portfolio/:path/
+#  poetry:
+#    output: true
+#    permalink: /poetry/:path/
