@@ -152,27 +152,41 @@ font-size: 36px;
     }
 }
 .post-content {
-h2 {
-font-size: 28px;
-@include media-query($on-laptop) {
-font-size: 28px;
-        }
+  h2 {
+    font-size: 28px;
+    @include media-query($on-laptop) {
+      font-size: 28px;
     }
-img {
-  max-width: 100%;
-}
-h3 {
-font-size: 22px;
-@include media-query($on-laptop) {
-font-size: 22px;
-        }
+  }
+  img {
+    max-width: 100%;
+  }
+  h3 {
+    font-size: 22px;
+    @include media-query($on-laptop) {
+      font-size: 22px;
     }
-h4 {
-font-size: 18px;
-@include media-query($on-laptop) {
-font-size: 18px;
-        }
+  }
+  h4 {
+    font-size: 18px;
+    @include media-query($on-laptop) {
+      font-size: 18px;
     }
+  }
+  table {
+    border-collapse: collapse;
+    border: 1px solid $background-color;
+  }
+  tr:nth-child(even) {
+    background-color: $grey-color-superlight;
+  }
+  td, th {
+    padding: 0px 10px 0px;
+  }
+  .table-container {
+    overflow-x: auto;
+    max-width: 100%;
+  }
 }
 .post-meta {
 font-size: $small-font-size;
