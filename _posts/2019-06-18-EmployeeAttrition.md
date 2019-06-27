@@ -449,7 +449,7 @@ sns.countplot(employees["salary"], color="skyblue", ax=ax[4, 1]);
 ```
 
 
-![png](/img/{{ img_dir}}/output_13_0.png)
+![png](/img/{{ img_dir }}/output_13_0.png)
 
 
 # Individual feature relationships
@@ -471,7 +471,7 @@ ax[4, 1].axis("off");
 ```
 
 
-![png](/img/{{ img_dir}}/output_15_0.png)
+![png](/img/{{ img_dir }}/output_15_0.png)
 
 
 Several initial hypotheses can be formed from these visuals:
@@ -533,7 +533,7 @@ sns.barplot(
 ```
 
 
-![png](/img/{{ img_dir}}/output_19_0.png)
+![png](/img/{{ img_dir }}/output_19_0.png)
 
 
 From the normalized barplots we can see the following:
@@ -553,7 +553,7 @@ sns.heatmap(
 ```
 
 
-![png](/img/{{ img_dir}}/output_22_0.png)
+![png](/img/{{ img_dir }}/output_22_0.png)
 
 
 ## Clustering
@@ -581,7 +581,7 @@ l.legendHandles[1].set_sizes((50,))
 ```
 
 
-![png](/img/{{ img_dir}}/output_24_0.png)
+![png](/img/{{ img_dir }}/output_24_0.png)
 
 
 Let's attempt to cluster these three groups.
@@ -618,7 +618,7 @@ l.legendHandles[3].set_sizes((50,))
 ```
 
 
-![png](/img/{{ img_dir}}/output_26_0.png)
+![png](/img/{{ img_dir }}/output_26_0.png)
 
 
 Let's now look at the distribution of features for each of these subgroups individually.
@@ -651,7 +651,7 @@ ax[4, 1].axis("off");
 ```
 
 
-![png](/img/{{ img_dir}}/output_28_0.png)
+![png](/img/{{ img_dir }}/output_28_0.png)
 
 
 This stratification paints an interesting picture and lets us make the following hypotheses:
@@ -984,7 +984,7 @@ sns.heatmap(
 ```
 
 
-![png](/img/{{ img_dir}}/output_43_0.png)
+![png](/img/{{ img_dir }}/output_43_0.png)
 
 
 The model has some difficulty with false negatives, i.e. it misses about $5\%$ of employees that leave the company. Objectively, however, the model exhibits adequate accuracy to not require further exploration and fine-tuning of the model, i.e. it's good enough for now.
@@ -1271,7 +1271,7 @@ ax[4, 1].axis("off");
 ```
 
 
-![png](/img/{{ img_dir}}/output_50_0.png)
+![png](/img/{{ img_dir }}/output_50_0.png)
 
 
 
@@ -1323,7 +1323,7 @@ l.legendHandles[1].set_sizes((50,))
 ```
 
 
-![png](/img/{{ img_dir}}/output_53_0.png)
+![png](/img/{{ img_dir }}/output_53_0.png)
 
 
 Convert categorical features
@@ -1616,7 +1616,7 @@ sns.heatmap(cm, annot=True, fmt="d", annot_kws={"fontsize": 20}, cmap=colormap)
 
 
 
-![png](/img/{{ img_dir}}/output_68_1.png)
+![png](/img/{{ img_dir }}/output_68_1.png)
 
 
 The model struggles primarily with the group of employees, who leave despite being happy with their work. Most likely there are factors not present in this dataset that better describe their reason for leaving.
