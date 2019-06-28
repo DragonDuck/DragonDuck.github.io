@@ -5,8 +5,7 @@ date: 2019-06-18
 author: Jan Sauer
 description: Understanding the factors that contribute to employee attrition can help
   employers retain high-quality employees and identify poorly performing ones early.
-img:
-meta: Dataset Analysis
+categories: [Exploratory Data Analysis, Machine Learning]
 ---
 
 {% assign img_dir = page.path | split: "/" | last | split: "." | first %}

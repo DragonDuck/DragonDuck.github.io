@@ -14,12 +14,23 @@ layout: default
 <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
-          <div class="default_thumbnail"></div>
+          <a href="{{ post.url | prepend: site.baseurl }}">
+          {% if post.has_no_img %}
+            <div class="default-thumbnail"></div>
+          {% else %}
+          <div class="index-thumbnail">
+            <span></span>
+            <img src="/img/{{ post.path | split: "/" | last | split: "." | first }}/thumbnail.png" alt="Thumbnail" />
+          </div>
+          {% endif %}
           <div>
-            <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-            <br/>
+            <h2 class="post-title">{{ post.title }}</h2>
+            <span class="post-list-categories">{{ post.categories | join: '&ensp;•&ensp;'}}</span>
+            <br/><br/>
             <!--<p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>//-->
             <p>{{ post.description }}</p>
+            <p></p>
+            </a>
           </div>
       </li>
     {% endfor %}

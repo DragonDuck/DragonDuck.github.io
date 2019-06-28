@@ -128,6 +128,11 @@ list-style: none;
     height: $thumbnail-size;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
+
+  .post-list-categories {
+    font-size: 0.75em;
+    margin-left: 10px;
+  }
 }
 .contacticon {
 font-size: 60px;
@@ -229,14 +234,37 @@ float: left;
 vertical-align: middle;
 box-sizing: border-box;
 padding: 10px;
+
+  span p {
+    font-size: 0.75em;
+  }
 }
-div.default_thumbnail {
+div.default-thumbnail {
   width: $thumbnail-size;
   height: $thumbnail-size;
   overflow: hidden;
   background: $theme-color;
   float: left;
   margin-right: 10px;
+}
+div.index-thumbnail {
+  width: $thumbnail-size;
+  height: $thumbnail-size;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  margin-right: 10px;
+  white-space: nowrap;
+  span {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  img {
+    vertical-align: middle;
+    max-width: $thumbnail-size;
+    max-height: $thumbnail-size;
+  }
 }
 .thumbnail{
 width: 100%;
@@ -265,7 +293,7 @@ bottom: 0;
 right: 0;
 background: rgba(0,0,0,0.4);
 color: $grey-color-light;
-padding: 40px;
+padding: 20px;
 text-align: center;
 }
 .thumbnail a:hover span {

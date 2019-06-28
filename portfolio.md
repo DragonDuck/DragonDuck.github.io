@@ -1,10 +1,11 @@
 ---
 layout: page
-title: portfolio
-permalink: /portfolio/
+REMOVEME_title: portfolio # Change var name to "title" to include in navigation again
+REMOVEME_permalink: /portfolio/ # Change var name to "permalink" to fix
 ---
 
 {% for project in site.posts %}
+{% assign catlist = project.categories | join: '&ensp;•&ensp;'%}
 
 {% if project.redirect %}
 <div class="project">
@@ -17,8 +18,8 @@ permalink: /portfolio/
         {% endif %}    
         <span>
             <h1>{{ project.title }}</h1>
-            <!--<br/>
-            <p>{{ project.description }}</p>//-->
+            <br/>
+            <p>{{ catlist }}</p>
         </span>
         </a>
     </div>
@@ -35,8 +36,8 @@ permalink: /portfolio/
         {% endif %}    
         <span>
             <h1>{{ project.title }}</h1>
-            <!--<br/>
-            <p>{{ project.description }}</p>//-->
+            <br/>
+            <p>{{ catlist }}</p>
         </span>
         </a>
     </div>

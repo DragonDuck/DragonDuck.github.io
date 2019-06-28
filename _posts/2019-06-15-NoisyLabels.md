@@ -5,8 +5,7 @@ date: 2019-06-15
 author: Jan Sauer
 description: Neural networks are robust towards errors in training data labels
   and can self-correct these label errors during training.
-img:
-meta: Research Project
+categories: [Machine Learning, Research Project]
 ---
 
 {% assign img_dir = page.path | split: "/" | last | split: "." | first %}

@@ -31,7 +31,3 @@ This is not a blog that reports on the current state of data science, machine le
 	<a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github"></i></a>
 	<a href="https://www.linkedin.com/in/sauerjan/" target="_blank"><i class="fa fa-linkedin"></i></a>
 </span>
-
-<div class="col three caption">
-	You can even add a little note about which of these is the best way to reach you.
-</div>

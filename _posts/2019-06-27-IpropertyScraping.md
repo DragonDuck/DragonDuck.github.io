@@ -5,8 +5,7 @@ date: 2019-06-27
 author: Jan Sauer
 description: Scraping and summarizing property prices from the internet can help
   give an idea of how properties differ between neighborhoods in Kuala Lumpur.
-img:
-meta: Web Scraping, Dataset Analysis
+categories: [Exploratory Data Analysis, Web Scraping]
 ---
 
 {% assign img_dir = page.path | split: "/" | last | split: "." | first %}

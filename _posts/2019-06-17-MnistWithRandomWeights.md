@@ -3,9 +3,8 @@ layout: post
 title: Classifying MNIST Data with Random-Weight Features
 date: 2019-06-17
 author: Jan Sauer
-description: The MNIST dataset is a common "benchmark" dataset for deep learning models. However, the dataset itself is unsuitable for this task as it is too trivial and can be successfully modeled with randomly generated features.
-img:
-meta: Research Project
+description: The MNIST handwritten digit dataset is too simple to serve as a suitable benchmark for machine and deep learning models.
+categories: [Machine Learning, Research Project]
 ---
 
 {% assign img_dir = page.path | split: "/" | last | split: "." | first %}
