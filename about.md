@@ -20,7 +20,16 @@ This website is my data-science-slash-programming portfolio, where I publish var
 
 In addition, I also enjoy speaking about my work and data science in general. Sometimes these speaking engagements are filmed:
 
-<b>&bull; Training Neural Networks on Noisy Labels<br/></b>
+<figure class="video_container">
+  <iframe 
+	  src="https://www.youtube.com/embed/Tdu8-2UFxs4" 
+	  frameborder="0" 
+	  allowfullscreen="true"
+	  width=40%
+  > </iframe>
+</figure>
+
+<!--<b>&bull; Training Neural Networks on Noisy Labels<br/></b>
 <a href="http://www.youtube.com/watch?v=Tdu8-2UFxs4">
 	<img 
 	     src="img/jan_wwckl_thumbnail.png" 
@@ -28,7 +37,7 @@ In addition, I also enjoy speaking about my work and data science in general. So
 	     width=40%
 	/>
 </a>
-
+//-->
 <br/>
 <hr/>
 <br/>
