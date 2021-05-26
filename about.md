@@ -18,10 +18,11 @@ Hello! My name is Jan and I'm a data scientist. I've spent over half a decade bu
 
 This website is my data-science-slash-programming portfolio, where I publish various open source projects of mine. I'm a firm believer in thoroughly documenting my work, so most of the projects here will be written in an easy-to-follow tutorial format.
 
-<!--<br/>
-<br/>
-<strong>What this is not</strong><br/>
-This is not a blog that reports on the current state of data science, machine learning, neural networks, visualization, or anything of the sort. There are not only plenty of blogs that fill this niche but also plenty of websites that list the relevant blogs. All projects shown on this page are either solely my own work or projects to which I contributed significantly.//-->
+In addition, I also enjoy speaking about my work and data science in general. Sometimes these speaking engagements are filmed:
+
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/Tdu8-2UFxs4" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
 
 <br/>
 <hr/>
