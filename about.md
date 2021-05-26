@@ -20,6 +20,7 @@ This website is my data-science-slash-programming portfolio, where I publish var
 
 In addition, I also enjoy speaking about my work and data science in general. Sometimes these speaking engagements are filmed:
 
+<b>&bull; Training Neural Networks on Noisy Labels<br/></b>
 <figure class="video_container">
   <iframe src="https://www.youtube.com/embed/Tdu8-2UFxs4" frameborder="0" allowfullscreen="true" width=350> </iframe>
 </figure>
